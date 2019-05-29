@@ -1,0 +1,3 @@
+from textda.data_expansion import data_expansion
+
+data_expansion
