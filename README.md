@@ -4,7 +4,7 @@
 ### you have two func for Chinese text Data Augmentation 
 
 ### Install textda
-Pip install it.
+pip install:
 
 ```bash
 pip install textda
@@ -44,7 +44,7 @@ param explain：
     
     like this:
     ```python
-    from textde.data_expansion import *
+    from textda.data_expansion import *
 
     print(data_expansion('生活里的惬意，无需等到春暖花开', alpha_ri=0, alpha_rs=0))
   
@@ -64,7 +64,7 @@ param explain：
 2. you can use **translate_batch** like this:
 
 ```python
-from textde.youdao_translate import *
+from textda.youdao_translate import *
 dir = './data'
 translate_batch(os.path.join(dir, 'insurance_train'), batch_num=30)
 

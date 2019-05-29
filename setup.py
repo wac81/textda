@@ -13,9 +13,9 @@ setuptools.setup(
     description="this is data augmentation for chinese text",
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
-    url="https://github.com/wac81/textde",
+    url="https://github.com/wac81/textda",
     packages=setuptools.find_packages(),
-    keywords='classification,expansion,augmentation,addition,data,text',
+    keywords='classification,expansion,augmentation,addition,data,text,chinese',
     license="MIT",
     package_data={
     'textda': [

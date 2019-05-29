@@ -6,7 +6,7 @@ import time
 import random
 
 
-print('WARNING: you need know, I would do my best for this translate web working, but it was allowed only 3000 times one hour.')
+print('WARNING: you need know, I would do my best for this translate web working, but it was allowed only 1000 times one hour.')
 
 def translate(word):
     '''
