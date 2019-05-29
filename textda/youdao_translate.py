@@ -52,7 +52,6 @@ def read_text_src(text_src, delimiter):
         raise TypeError('text_src should be list or str')
     return text_src
 
-
 def translate_batch(file_path, batch_num=30, reWrite=True, suffix='_youdao'):
     '''
 
