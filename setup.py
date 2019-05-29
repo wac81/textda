@@ -1,3 +1,20 @@
+'''
+python3 setup.py bdist_wheel --universal
+
+
+
+HTTPError: 400 Client Error: The description failed to render in the default format of reStructuredText
+
+solved:
+If you're using a Markdown long_description:
+The metadata for your distribution is invalid and is not specifying Markdown.
+
+This means that either you haven't set long_description_content_type='text/markdown', in your setup.py file, or that the tools that you're using are out of date and don't support this metadata field. Upgrade them to latest:
+
+$ pip install -U twine wheel setuptools
+
+'''
+
 import setuptools
 
 with open('README.md') as f:

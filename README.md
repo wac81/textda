@@ -43,21 +43,22 @@ param explain：
     if you set alpha_ri and alpha_rs is 0 that means use **linear classifier** for it, and insensitive to word location
     
     like this:
-    ```python
-    from textda.data_expansion import *
+  ```python
+    
+  from textda.data_expansion import *
 
-    print(data_expansion('生活里的惬意，无需等到春暖花开', alpha_ri=0, alpha_rs=0))
+  print(data_expansion('生活里的惬意，无需等到春暖花开', alpha_ri=0, alpha_rs=0))
   
-    ```
-    output:
-
-    ```python
-    ['生活里的惬意，无需等到春暖花开', 
+  ```
+  output:
+    
+  ```python
+  ['生活里的惬意，无需等到春暖花开', 
       '，无需春暖花开', 
       '生活里面的惬意，无需等到春暖花开', 
       '生活里的惬意，需等到春暖花开']
     
-    ```
+  ```
      
 
 
@@ -70,8 +71,7 @@ translate_batch(os.path.join(dir, 'insurance_train'), batch_num=30)
 
 ```
 
-```python
-
+```
 # translate results:  chinese->english and english -> chinese
 
 颜色碰掉了一个角不延迟,但事情或他们不赠送,或发送,眉笔打开已经破碎,磨山楂,也不打破一只手,轻轻刷掉,持久性不长,
@@ -96,7 +96,6 @@ translate_batch(os.path.join(dir, 'insurance_train'), batch_num=30)
 感觉好干,颜色更暗
 打破了在运输途中,有点太脆弱…
 盒子有点坏了,还没有发送。
-
 
 ```
 
