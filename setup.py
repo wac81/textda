@@ -24,7 +24,7 @@ with open('README.md') as f:
 
 setuptools.setup(
     name="textda",
-    version="0.1.0.5",
+    version="0.1.0.6",
     author="wac",
     author_email="wuanch@gmail.com",
     description="this is data augmentation for chinese text",

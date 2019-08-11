@@ -2,6 +2,8 @@ import synonyms
 import jieba
 import random
 import os,sys
+random.seed(1)
+
 curdir = os.path.dirname(os.path.abspath(__file__))
 sys.path.append(curdir)
 
@@ -132,10 +134,14 @@ def add_word(new_words):
     syn_words = []
     counter = 0
 
-    while syn_words and len(syn_words) < 1:
+    while len(syn_words) < 1:
         random_word = new_words[random.randint(0, len(new_words)-1)]
         if random_word not in stopwords:  # 不在停用词表中
-            syn_words = get_one_syn_words(random_word)
+            r = get_one_syn_words(random_word)
+            if not r:
+                syn_words = []
+            else:
+                syn_words = r
             counter += 1
 
             if counter >= 10:
