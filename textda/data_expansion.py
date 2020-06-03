@@ -10,7 +10,7 @@ sys.path.append(curdir)
 stopwords_path = os.path.join(curdir, './data/stopwords.txt')
 
 
-stopwords = open(stopwords_path, mode='r').readlines()
+stopwords = open(stopwords_path, mode='r', encoding='utf8').readlines()
 stopwords = [word.strip() for word in stopwords]
 
 import re
